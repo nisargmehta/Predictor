@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>771382198820-ppt2jdbrfl7np6fok47avv2petpa6irn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.771382198820-ppt2jdbrfl7np6fok47avv2petpa6irn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWAybY7w89awm8QSTUu3n1C8kzlbW4zHI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>771382198820</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.open.Predictor</string>
+	<key>PROJECT_ID</key>
+	<string>predictor-8763b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>predictor-8763b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:771382198820:ios:8a8faeacd416e128</string>
+	<key>DATABASE_URL</key>
+	<string>https://predictor-8763b.firebaseio.com</string>
+</dict>
+</plist>
