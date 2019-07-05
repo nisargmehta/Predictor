@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainTabbarController.swift
 //  Predictor
 //
 //  Created by Nisarg Mehta on 6/30/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainTabbarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

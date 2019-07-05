@@ -3,29 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		07B8F35440430C57623041FA /* Pods_Predictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */; };
 		1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */; };
-		1F7D26AE22C97A3E005806B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AD22C97A3E005806B2 /* ViewController.swift */; };
+		1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */; };
 		1F7D26B122C97A3E005806B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26AF22C97A3E005806B2 /* Main.storyboard */; };
 		1F7D26B322C97A3F005806B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26B222C97A3F005806B2 /* Assets.xcassets */; };
 		1F7D26B622C97A3F005806B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26B422C97A3F005806B2 /* LaunchScreen.storyboard */; };
 		1F7D26BE22C97CEE005806B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */; };
+		1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04779E990FBA0060EB9DDBB0 /* Pods-Predictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predictor.release.xcconfig"; path = "Target Support Files/Pods-Predictor/Pods-Predictor.release.xcconfig"; sourceTree = "<group>"; };
 		1F7D26A822C97A3E005806B2 /* Predictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Predictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F7D26AD22C97A3E005806B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		1F7D26B022C97A3E005806B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F7D26B222C97A3F005806B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7D26B522C97A3F005806B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F7D26B722C97A3F005806B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Predictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4CB57CB5BA9F7983C53330 /* Pods-Predictor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predictor.debug.xcconfig"; path = "Target Support Files/Pods-Predictor/Pods-Predictor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,12 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */,
-				1F7D26AD22C97A3E005806B2 /* ViewController.swift */,
+				1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */,
 				1F7D26AF22C97A3E005806B2 /* Main.storyboard */,
 				1F7D26B222C97A3F005806B2 /* Assets.xcassets */,
 				1F7D26B422C97A3F005806B2 /* LaunchScreen.storyboard */,
 				1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */,
 				1F7D26B722C97A3F005806B2 /* Info.plist */,
+				1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */,
 			);
 			path = Predictor;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				4A4CB57CB5BA9F7983C53330 /* Pods-Predictor.debug.xcconfig */,
 				04779E990FBA0060EB9DDBB0 /* Pods-Predictor.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7D26AE22C97A3E005806B2 /* ViewController.swift in Sources */,
+				1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */,
+				1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */,
 				1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
