@@ -15,6 +15,7 @@
 		1F7D26B622C97A3F005806B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26B422C97A3F005806B2 /* LaunchScreen.storyboard */; };
 		1F7D26BE22C97CEE005806B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */; };
 		1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */; };
+		1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F7D26B722C97A3F005806B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Predictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4CB57CB5BA9F7983C53330 /* Pods-Predictor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predictor.debug.xcconfig"; path = "Target Support Files/Pods-Predictor/Pods-Predictor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */,
 				1F7D26B722C97A3F005806B2 /* Info.plist */,
 				1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */,
+				1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */,
 			);
 			path = Predictor;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */,
 				1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */,
 				1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */,
 				1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */,

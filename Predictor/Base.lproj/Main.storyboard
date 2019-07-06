@@ -48,7 +48,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mw2-CD-jy5" kind="relationship" relationship="viewControllers" id="G4Q-Qt-O05"/>
+                        <segue destination="2Mp-6B-Hhq" kind="relationship" relationship="viewControllers" id="G4Q-Qt-O05"/>
                         <segue destination="h1G-oD-CwU" kind="relationship" relationship="viewControllers" id="U5v-b8-bX7"/>
                     </connections>
                 </tabBarController>
@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="-904" y="-250"/>
         </scene>
-        <!--Home-->
+        <!--Contests-->
         <scene sceneID="GwE-WG-pat">
             <objects>
                 <tableViewController id="mw2-CD-jy5" customClass="HomeTableViewController" customModule="Predictor" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,11 +95,30 @@
                             <outlet property="delegate" destination="mw2-CD-jy5" id="CPM-gR-3i0"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="QsH-gl-rpm"/>
+                    <navigationItem key="navigationItem" title="Contests" id="l1g-bE-Io6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDN-9B-0fI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="-595"/>
+            <point key="canvasLocation" x="933.33333333333337" y="-595.3125"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ycV-sH-UhD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Mp-6B-Hhq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="QsH-gl-rpm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="niO-JO-JAG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mw2-CD-jy5" kind="relationship" relationship="rootViewController" id="rK3-vF-kGh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYm-fH-bPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.188405797101453" y="-595.3125"/>
         </scene>
     </scenes>
 </document>
