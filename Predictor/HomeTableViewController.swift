@@ -8,7 +8,9 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: UITableViewController, DataReactable {
+    
+    var allContests: [Contest] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +18,21 @@ class HomeTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        FirebaseManager.shared.addObserver(self)
+        FirebaseManager.shared.getContestData()
     }
 
+    deinit {
+        FirebaseManager.shared.removeObserver(self)
+    }
+    
+    func dataChanged<T>(data: [T]) where T : DocumentSerializable {
+        if let contests = data as? [Contest] {
+            self.allContests = contests
+            self.tableView.reloadData()
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,13 +42,13 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return allContests.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contestCell", for: indexPath)
-        cell.textLabel?.text = "contest \(indexPath.row+1)"
-        cell.detailTextLabel?.text = "status"
+        cell.textLabel?.text = allContests[indexPath.row].name
+        cell.detailTextLabel?.text = allContests[indexPath.row].status
         return cell
     }
 
