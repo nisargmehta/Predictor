@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07B8F35440430C57623041FA /* Pods_Predictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */; };
+		1F1CE7E322D289C90029AFC1 /* Contest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7E222D289C90029AFC1 /* Contest.swift */; };
+		1F1CE7E522D28CA70029AFC1 /* DataReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7E422D28CA70029AFC1 /* DataReactable.swift */; };
 		1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */; };
 		1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */; };
 		1F7D26B122C97A3E005806B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26AF22C97A3E005806B2 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		04779E990FBA0060EB9DDBB0 /* Pods-Predictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predictor.release.xcconfig"; path = "Target Support Files/Pods-Predictor/Pods-Predictor.release.xcconfig"; sourceTree = "<group>"; };
+		1F1CE7E222D289C90029AFC1 /* Contest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contest.swift; sourceTree = "<group>"; };
+		1F1CE7E422D28CA70029AFC1 /* DataReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReactable.swift; sourceTree = "<group>"; };
 		1F7D26A822C97A3E005806B2 /* Predictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Predictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1CE7E122D289AE0029AFC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CE7E222D289C90029AFC1 /* Contest.swift */,
+				1F1CE7E422D28CA70029AFC1 /* DataReactable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1F7D269F22C97A3D005806B2 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,7 @@
 		1F7D26AA22C97A3E005806B2 /* Predictor */ = {
 			isa = PBXGroup;
 			children = (
+				1F1CE7E122D289AE0029AFC1 /* Models */,
 				1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */,
 				1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */,
 				1F7D26AF22C97A3E005806B2 /* Main.storyboard */,
@@ -213,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1CE7E322D289C90029AFC1 /* Contest.swift in Sources */,
+				1F1CE7E522D28CA70029AFC1 /* DataReactable.swift in Sources */,
 				1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */,
 				1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */,
 				1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */,
