@@ -10,6 +10,9 @@
 		07B8F35440430C57623041FA /* Pods_Predictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */; };
 		1F1CE7E322D289C90029AFC1 /* Contest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7E222D289C90029AFC1 /* Contest.swift */; };
 		1F1CE7E522D28CA70029AFC1 /* DataReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7E422D28CA70029AFC1 /* DataReactable.swift */; };
+		1F1CE7E722D292C70029AFC1 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7E622D292C70029AFC1 /* CardsViewController.swift */; };
+		1F1CE7EC22D2C3C70029AFC1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CE7EB22D2C3C70029AFC1 /* CardView.swift */; };
+		1F1CE7EE22D2C3DD0029AFC1 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1CE7ED22D2C3DD0029AFC1 /* CardView.xib */; };
 		1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */; };
 		1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */; };
 		1F7D26B122C97A3E005806B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26AF22C97A3E005806B2 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		04779E990FBA0060EB9DDBB0 /* Pods-Predictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predictor.release.xcconfig"; path = "Target Support Files/Pods-Predictor/Pods-Predictor.release.xcconfig"; sourceTree = "<group>"; };
 		1F1CE7E222D289C90029AFC1 /* Contest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contest.swift; sourceTree = "<group>"; };
 		1F1CE7E422D28CA70029AFC1 /* DataReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReactable.swift; sourceTree = "<group>"; };
+		1F1CE7E622D292C70029AFC1 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		1F1CE7EB22D2C3C70029AFC1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1F1CE7ED22D2C3DD0029AFC1 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		1F7D26A822C97A3E005806B2 /* Predictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Predictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7D26AB22C97A3E005806B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F7D26AD22C97A3E005806B2 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				1F7D26B722C97A3F005806B2 /* Info.plist */,
 				1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */,
 				1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */,
+				1F1CE7E622D292C70029AFC1 /* CardsViewController.swift */,
+				1F1CE7EB22D2C3C70029AFC1 /* CardView.swift */,
+				1F1CE7ED22D2C3DD0029AFC1 /* CardView.xib */,
 			);
 			path = Predictor;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 			files = (
 				1F7D26B622C97A3F005806B2 /* LaunchScreen.storyboard in Resources */,
 				1F7D26BE22C97CEE005806B2 /* GoogleService-Info.plist in Resources */,
+				1F1CE7EE22D2C3DD0029AFC1 /* CardView.xib in Resources */,
 				1F7D26B322C97A3F005806B2 /* Assets.xcassets in Resources */,
 				1F7D26B122C97A3E005806B2 /* Main.storyboard in Resources */,
 			);
@@ -228,10 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F1CE7E322D289C90029AFC1 /* Contest.swift in Sources */,
+				1F1CE7E722D292C70029AFC1 /* CardsViewController.swift in Sources */,
 				1F1CE7E522D28CA70029AFC1 /* DataReactable.swift in Sources */,
 				1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */,
 				1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */,
 				1F7D26AE22C97A3E005806B2 /* MainTabbarController.swift in Sources */,
+				1F1CE7EC22D2C3C70029AFC1 /* CardView.swift in Sources */,
 				1F7D26AC22C97A3E005806B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

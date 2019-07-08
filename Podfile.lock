@@ -85,17 +85,21 @@ PODS:
     - gRPC-Core/Interface (= 1.21.0)
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
+  - Koloda (5.0):
+    - pop (~> 1.0)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - pop (1.0.12)
   - Protobuf (3.8.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
+  - Koloda
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -110,8 +114,10 @@ SPEC REPOS:
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
+    - Koloda
     - leveldb-library
     - nanopb
+    - pop
     - Protobuf
 
 SPEC CHECKSUMS:
@@ -126,10 +132,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
+  Koloda: 75302d21882cc3e274c1561b1155805ea5919dab
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
 
-PODFILE CHECKSUM: f67a376f8434b8962e1fe40e885a8ef9d7e4d0a3
+PODFILE CHECKSUM: bcc9c92cedc7ca8560321519c950e693a7ddec1b
 
 COCOAPODS: 1.7.3
