@@ -123,20 +123,64 @@
             </objects>
             <point key="canvasLocation" x="23.188405797101453" y="-595.3125"/>
         </scene>
-        <!--View Controller-->
+        <!--Cards View Controller-->
         <scene sceneID="YI5-kn-W6q">
             <objects>
-                <viewController id="D6C-ug-e9e" sceneMemberID="viewController">
+                <viewController id="D6C-ug-e9e" customClass="CardsViewController" customModule="Predictor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Y2-y2-jBe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-rW-Y4F">
+                                <rect key="frame" x="0.0" y="88" width="414" height="798"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-3X-ghT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kHK-A9-5zg">
+                                                <rect key="frame" x="41.5" y="29.5" width="331" height="2.5"/>
+                                                <color key="progressTintColor" red="1" green="0.4247966078" blue="0.3756065529" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="trackTintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kHK-A9-5zg" firstAttribute="centerX" secondItem="Ob4-3X-ghT" secondAttribute="centerX" id="2aG-3q-tEa"/>
+                                            <constraint firstAttribute="height" constant="60" id="lzf-hW-uIp"/>
+                                            <constraint firstItem="kHK-A9-5zg" firstAttribute="width" secondItem="Ob4-3X-ghT" secondAttribute="width" multiplier="0.8" id="xE8-rn-33u"/>
+                                            <constraint firstItem="kHK-A9-5zg" firstAttribute="centerY" secondItem="Ob4-3X-ghT" secondAttribute="centerY" id="xre-kn-51l"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2v-Md-EpY" customClass="KolodaView" customModule="Koloda">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="598"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2y-5C-aZq">
+                                        <rect key="frame" x="0.0" y="658" width="414" height="140"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="mQk-Pv-8eE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ejs-rW-Y4F" firstAttribute="top" secondItem="Ddw-2Q-XYr" secondAttribute="top" id="Lqh-yU-a7r"/>
+                            <constraint firstItem="ejs-rW-Y4F" firstAttribute="trailing" secondItem="Ddw-2Q-XYr" secondAttribute="trailing" id="PLS-Xq-Mhp"/>
+                            <constraint firstAttribute="bottom" secondItem="ejs-rW-Y4F" secondAttribute="bottom" constant="10" id="VGO-6e-M6n"/>
+                            <constraint firstItem="ejs-rW-Y4F" firstAttribute="leading" secondItem="Ddw-2Q-XYr" secondAttribute="leading" id="k1I-j0-D2X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ddw-2Q-XYr"/>
                     </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="J2v-Md-EpY" id="ycz-Dn-ld0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s68-VF-GDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="-595"/>
+            <point key="canvasLocation" x="1695.6521739130435" y="-595.3125"/>
         </scene>
     </scenes>
 </document>

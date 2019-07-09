@@ -11,7 +11,14 @@ import UIKit
 class CardView: UIView {
     @IBOutlet weak var mainLabel: UILabel!
     
-    func configure() {
-        
+    class func instantiate() -> CardView {
+        guard let v = Bundle.main.loadNibNamed(String(describing:self), owner: nil, options: nil)?.first as? CardView else {
+            fatalError("Failed to load cardview from nib")
+        }
+        return v
+    }
+    
+    func configure(text: String) {
+        self.mainLabel.text = text
     }
 }

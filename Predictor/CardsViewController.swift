@@ -12,12 +12,21 @@ import Koloda
 class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate {
 
     @IBOutlet weak var kolodaView: KolodaView!
-    var allCards:[UIView] = []
+    var allCardsData:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateStaticData()
         kolodaView.dataSource = self
         kolodaView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    func populateStaticData() {
+        self.allCardsData = ["First card", "Second card!!", "last card?"]
     }
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
@@ -30,7 +39,7 @@ class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
     
     
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return allCards.count
+        return allCardsData.count
     }
     
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
@@ -38,7 +47,10 @@ class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return self.allCards[index]
+        let view = CardView.instantiate()
+        view.configure(text: allCardsData[index])
+        view.frame = koloda.frame
+        return view
     }
     
 //    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
