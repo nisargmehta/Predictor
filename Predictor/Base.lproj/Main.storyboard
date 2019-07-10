@@ -152,17 +152,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2v-Md-EpY" customClass="KolodaView" customModule="Koloda">
-                                        <rect key="frame" x="0.0" y="60" width="414" height="598"/>
+                                        <rect key="frame" x="0.0" y="60" width="414" height="618"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2y-5C-aZq">
-                                        <rect key="frame" x="0.0" y="658" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="678" width="414" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-xH-3T3">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tow-fX-4fT">
-                                                        <rect key="frame" x="0.0" y="40" width="207" height="60"/>
+                                                        <rect key="frame" x="0.0" y="30" width="207" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="nUB-nY-cIH"/>
                                                         </constraints>
@@ -172,7 +172,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0W-PW-dNQ">
-                                                        <rect key="frame" x="207" y="40" width="207" height="60"/>
+                                                        <rect key="frame" x="207" y="30" width="207" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="c7W-Nj-ISo"/>
                                                         </constraints>
@@ -190,7 +190,7 @@
                                             <constraint firstAttribute="bottom" secondItem="ofd-xH-3T3" secondAttribute="bottom" id="RAS-AC-Efw"/>
                                             <constraint firstItem="ofd-xH-3T3" firstAttribute="top" secondItem="W2y-5C-aZq" secondAttribute="top" id="bqQ-cL-2KV"/>
                                             <constraint firstItem="ofd-xH-3T3" firstAttribute="leading" secondItem="W2y-5C-aZq" secondAttribute="leading" id="mOK-RP-Nxr"/>
-                                            <constraint firstAttribute="height" constant="140" id="mQk-Pv-8eE"/>
+                                            <constraint firstAttribute="height" constant="120" id="mQk-Pv-8eE"/>
                                         </constraints>
                                     </view>
                                 </subviews>

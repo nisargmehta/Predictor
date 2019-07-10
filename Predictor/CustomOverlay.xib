@@ -16,15 +16,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EAs-ve-9HP">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="157" y="398" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Oa0-W8-pVA"/>
+                        <constraint firstAttribute="width" constant="100" id="yM3-2m-ZJA"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="EAs-ve-9HP" secondAttribute="trailing" id="I7C-9n-fg6"/>
-                <constraint firstItem="EAs-ve-9HP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QnN-DL-doU"/>
-                <constraint firstAttribute="bottom" secondItem="EAs-ve-9HP" secondAttribute="bottom" id="cE3-Dz-p7e"/>
-                <constraint firstItem="EAs-ve-9HP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lfj-y5-ObY"/>
+                <constraint firstItem="EAs-ve-9HP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="38x-sp-ysH"/>
+                <constraint firstItem="EAs-ve-9HP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YWc-hI-hms"/>
             </constraints>
             <connections>
                 <outlet property="overlayImageView" destination="EAs-ve-9HP" id="Pjf-3t-qgh"/>
