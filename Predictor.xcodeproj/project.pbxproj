@@ -19,6 +19,8 @@
 		1F7D26B322C97A3F005806B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26B222C97A3F005806B2 /* Assets.xcassets */; };
 		1F7D26B622C97A3F005806B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26B422C97A3F005806B2 /* LaunchScreen.storyboard */; };
 		1F7D26BE22C97CEE005806B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */; };
+		1FB332AF22D46C4200220003 /* CustomOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB332AE22D46C4200220003 /* CustomOverlay.xib */; };
+		1FB332B122D46C6400220003 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB332B022D46C6400220003 /* CustomOverlay.swift */; };
 		1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */; };
 		1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		1F7D26B522C97A3F005806B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F7D26B722C97A3F005806B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7D26BD22C97CEE005806B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1FB332AE22D46C4200220003 /* CustomOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomOverlay.xib; sourceTree = "<group>"; };
+		1FB332B022D46C6400220003 /* CustomOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
 		1FFD38BB22CFEC480076011E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		1FFD38BD22CFEF5A0076011E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		28163BB4E7E80EB712E71783 /* Pods_Predictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Predictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +103,8 @@
 				1F1CE7E622D292C70029AFC1 /* CardsViewController.swift */,
 				1F1CE7EB22D2C3C70029AFC1 /* CardView.swift */,
 				1F1CE7ED22D2C3DD0029AFC1 /* CardView.xib */,
+				1FB332B022D46C6400220003 /* CustomOverlay.swift */,
+				1FB332AE22D46C4200220003 /* CustomOverlay.xib */,
 			);
 			path = Predictor;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7D26B622C97A3F005806B2 /* LaunchScreen.storyboard in Resources */,
+				1FB332AF22D46C4200220003 /* CustomOverlay.xib in Resources */,
 				1F7D26BE22C97CEE005806B2 /* GoogleService-Info.plist in Resources */,
 				1F1CE7EE22D2C3DD0029AFC1 /* CardView.xib in Resources */,
 				1F7D26B322C97A3F005806B2 /* Assets.xcassets in Resources */,
@@ -239,6 +246,7 @@
 			files = (
 				1F1CE7E322D289C90029AFC1 /* Contest.swift in Sources */,
 				1F1CE7E722D292C70029AFC1 /* CardsViewController.swift in Sources */,
+				1FB332B122D46C6400220003 /* CustomOverlay.swift in Sources */,
 				1F1CE7E522D28CA70029AFC1 /* DataReactable.swift in Sources */,
 				1FFD38BE22CFEF5A0076011E /* FirebaseManager.swift in Sources */,
 				1FFD38BC22CFEC480076011E /* HomeTableViewController.swift in Sources */,

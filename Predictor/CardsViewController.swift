@@ -53,7 +53,20 @@ class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
         return view
     }
     
-//    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
-//        return Bundle.main.loadNibNamed("OverlayView", owner: self, options: nil)[0] as? OverlayView
-//    }
+    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
+        return Bundle.main.loadNibNamed("CustomOverlay", owner: self, options: nil)?[0] as? CustomOverlay
+    }
+    
+    func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        // collect data
+        
+    }
+    
+    @IBAction func yesActionTapped() {
+        kolodaView.swipe(.right)
+    }
+    
+    @IBAction func noActionTapped() {
+        kolodaView.swipe(.left)
+    }
 }

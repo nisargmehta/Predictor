@@ -126,7 +126,7 @@
         <!--Cards View Controller-->
         <scene sceneID="YI5-kn-W6q">
             <objects>
-                <viewController id="D6C-ug-e9e" customClass="CardsViewController" customModule="Predictor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="D6C-ug-e9e" customClass="CardsViewController" customModule="Predictor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Y2-y2-jBe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,8 +157,39 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2y-5C-aZq">
                                         <rect key="frame" x="0.0" y="658" width="414" height="140"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-xH-3T3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tow-fX-4fT">
+                                                        <rect key="frame" x="0.0" y="40" width="207" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="nUB-nY-cIH"/>
+                                                        </constraints>
+                                                        <state key="normal" image="noIcon"/>
+                                                        <connections>
+                                                            <action selector="noActionTapped" destination="D6C-ug-e9e" eventType="touchUpInside" id="MAW-c6-kK4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0W-PW-dNQ">
+                                                        <rect key="frame" x="207" y="40" width="207" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="c7W-Nj-ISo"/>
+                                                        </constraints>
+                                                        <state key="normal" image="yesIcon"/>
+                                                        <connections>
+                                                            <action selector="yesActionTapped" destination="D6C-ug-e9e" eventType="touchUpInside" id="uMM-Gf-VQS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ofd-xH-3T3" secondAttribute="trailing" id="BOd-NG-Ldu"/>
+                                            <constraint firstAttribute="bottom" secondItem="ofd-xH-3T3" secondAttribute="bottom" id="RAS-AC-Efw"/>
+                                            <constraint firstItem="ofd-xH-3T3" firstAttribute="top" secondItem="W2y-5C-aZq" secondAttribute="top" id="bqQ-cL-2KV"/>
+                                            <constraint firstItem="ofd-xH-3T3" firstAttribute="leading" secondItem="W2y-5C-aZq" secondAttribute="leading" id="mOK-RP-Nxr"/>
                                             <constraint firstAttribute="height" constant="140" id="mQk-Pv-8eE"/>
                                         </constraints>
                                     </view>
@@ -183,4 +214,8 @@
             <point key="canvasLocation" x="1695.6521739130435" y="-595.3125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noIcon" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="yesIcon" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
 </document>
