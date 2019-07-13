@@ -7,5 +7,6 @@ target 'Predictor' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'Koloda'
 
 end
