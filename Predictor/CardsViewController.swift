@@ -29,9 +29,12 @@ class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
     
     func populateStaticData() {
         self.allCardsData = ["First card", "Second card!!", "last card?"]
+        progressView.progress = 0
+        
     }
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+        // show a final view
         koloda.reloadData()
     }
     
@@ -61,7 +64,8 @@ class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         // collect data
-        
+        let value = index+1
+        progressView.progress = Float(value/allCardsData.count)
     }
     
     @IBAction func yesActionTapped() {
