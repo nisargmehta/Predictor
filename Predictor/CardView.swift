@@ -10,6 +10,7 @@ import UIKit
 
 class CardView: UIView {
     @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     class func instantiate() -> CardView {
         guard let v = Bundle.main.loadNibNamed(String(describing:self), owner: nil, options: nil)?.first as? CardView else {

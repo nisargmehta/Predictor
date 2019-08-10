@@ -16,22 +16,39 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-ce-mNy">
-                    <rect key="frame" x="170" y="430.5" width="74" height="35"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lSH-9h-8rB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-0h-lq6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Eyd-0h-lq6" secondAttribute="height" multiplier="1:1" id="Lt1-h7-D6w"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-ce-mNy">
+                            <rect key="frame" x="182.5" y="434" width="49" height="384"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Eyd-0h-lq6" firstAttribute="width" secondItem="lSH-9h-8rB" secondAttribute="width" id="E10-Qk-dv7"/>
+                    </constraints>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" red="0.89193547036302878" green="0.94776992181252728" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.89455950341364887" green="1" blue="0.92467008878444368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2F5-ce-mNy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ho3-Sy-BHO"/>
-                <constraint firstItem="2F5-ce-mNy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bn0-6D-lgl"/>
+                <constraint firstItem="lSH-9h-8rB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3bk-sh-98Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lSH-9h-8rB" secondAttribute="bottom" id="MMg-H6-SlN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lSH-9h-8rB" secondAttribute="trailing" id="QUM-Xu-RbF"/>
+                <constraint firstItem="lSH-9h-8rB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tLY-tX-dUw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="mainLabel" destination="2F5-ce-mNy" id="4i3-dP-Gk1"/>
             </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="55.580357142857139"/>
         </view>
     </objects>
 </document>

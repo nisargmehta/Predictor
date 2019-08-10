@@ -35,6 +35,8 @@ class FirebaseManager {
             return
         }
         let models = snapshot.documents.map { (document) -> Contest in
+            let docId = document.documentID
+            print(docId)
             if let model = Contest(dictionary: document.data()) {
                 return model
             } else {

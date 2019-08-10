@@ -12,6 +12,8 @@ import Koloda
 class CardsViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate {
 
     @IBOutlet weak var kolodaView: KolodaView!
+    @IBOutlet weak var progressView: UIProgressView!
+    
     var allCardsData:[String] = []
     
     override func viewDidLoad() {
